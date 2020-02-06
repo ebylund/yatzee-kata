@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist && mkdir dist",
+    "watch": "tsc -w",
     "start:dev": "nodemon dist/src/index.js",
     "start": "yarn build && node dist/src/index.js",
     "prebuild": "yarn clean",
@@ -17,6 +18,7 @@
     "@types/dotenv": "^8.2.0",
     "@types/mocha": "^5.2.7",
     "@types/node": "^13.1.1",
+    "@types/ramda": "^0.26.40",
     "chai": "^4.2.0",
     "mocha": "^6.2.2",
     "nodemon": "^2.0.2",
@@ -26,6 +28,7 @@
     "typescript": "^3.7.4"
   },
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "ramda": "^0.27.0"
   }
 }
